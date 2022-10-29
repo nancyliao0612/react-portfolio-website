@@ -10,7 +10,7 @@ header {
   position: relative;
 }
 
-/* CTA */
+/* ===== CTA ===== */
 .cta {
   margin-top: 2.5rem;
   display: flex;
@@ -18,7 +18,7 @@ header {
   gap: 1.2rem;
 }
 
-/* HEADER SOCIALS */
+/* ===== HEADER SOCIALS ===== */
 .header__socials {
   display: flex;
   flex-direction: column;
@@ -36,7 +36,7 @@ header {
   background-color: var(--color-primary);
 }
 
-/* ME */
+/* ===== ME ===== */
 .me {
   position: absolute;
   left: 50%;
@@ -51,7 +51,7 @@ header {
   overflow: hidden;
 }
 
-/* SCROLL DOWN */
+/* ===== SCROLL DOWN ===== */
 .scroll__down {
   position: absolute;
   transform: rotateZ(90deg);
@@ -59,4 +59,21 @@ header {
   bottom: 5rem;
   font-weight: 300;
   font-size: 0.9rem;
+}
+
+/* ===== MEDIA QUERIES (MEDIUM DEVICES) ===== */
+@media screen and (max-width: 1024px) {
+  header {
+    height: 68vh;
+  }
+}
+/* ===== MEDIA QUERIES (SMALL DEVICES) ===== */
+@media screen and (max-width: 600px) {
+  header {
+    height: 100vh;
+  }
+  .header__socials,
+  .scroll__down {
+    display: none;
+  }
 }
